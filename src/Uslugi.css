@@ -1,0 +1,356 @@
+.container2 {
+    position: relative;
+    background-image: url('sh2.webp');
+    background-size: cover;
+    background-position: fixed;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5B4B4B;
+    opacity: 0.3;
+  }
+  
+  .uslugi {
+    background: linear-gradient(to bottom, #390D0D, #1A1818);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .uslugi-title {
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .uslugi-services {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .service {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 30%;
+    height: 400px;
+    position: relative;
+  }
+
+  .service-guitar {
+    background-image: url('gitar.webp');
+  }
+  
+  .service-vocal {
+    background-image: url('vokal.webp');
+  }
+
+  .service-songs {
+    background-image: url('pesni.webp');
+  }
+
+  .service-guitar,
+  .service-vocal,
+  .service-songs {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .service-guitar::after,
+  .service-vocal::after,
+  .service-songs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    z-index: -1;
+  }
+  
+  .service-guitar::after {
+    background-color: #332F2F;
+    opacity: 0.7;
+  }
+  
+  .service-vocal::after {
+    background-color: #3A3737;
+    opacity: 0.8;
+  }
+  
+  .service-songs::after {
+    background-color: #3A3737;
+    opacity: 0.8;
+  }
+  
+  .service-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .service-heading {
+    font-size: 22px;
+    color: #F43737;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .service-text {
+    font-size: 15px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+  }
+  
+  .service-price {
+    font-size: 18px;
+    color: #e82323;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .service-button {
+    background-color: #A11E1F;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+  }
+  
+  .service-button:hover {
+    background-color: #8B0000;
+  }
+
+  .unique-offer {
+    background: linear-gradient(to bottom, #1A1818, #390D0D);
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 70px;
+  }
+  
+  .unique-offer-title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .offer-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .offer-rectangle {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-image: url('dr.webp'); /* Убедитесь, что путь к изображению корректен */
+    width: 70%;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .pseudo-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .offer-heading,
+  .offer-text,
+  .offer-detail,
+  .offer-button,
+  .offer-detail1 {
+    position: relative; /* Это позволяет применять z-index к этим элементам */
+    z-index: 2; /* Это устанавливает эти элементы поверх псевдоконтейнера */
+}
+
+  .pseudo-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #181818;
+    opacity: 0.8;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .offer-heading {
+    color: #f82f2f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .offer-text{
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .offer-detail {
+    color: #f82f2f;
+    font-size: 20px;
+    margin: 30px;
+    font-weight: bold;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .offer-detail1 {
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+    font-weight: bold;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .offer-button {
+    background-color: #A11E1F;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+  }
+
+  .offer-button:hover {
+    background-color: #8B0000;
+  }
+
+  /* Стили для модального окна */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #292626;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 500px;
+  position: relative;
+}
+
+.modal-title {
+  color: #FF3131;
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.modal p {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.input-field {
+  background-color: #807F7F;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: calc(100% - 20px); /* Вычитаем padding */
+}
+
+.input-field::placeholder {
+  color: #403F3F;
+}
+
+button {
+  background-color: #DA2424;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8B0000;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+  
+/* Стили для второго модального окна */
+.thank-you-modal {
+  display: none; /* Изначально скрыто */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001; /* Выше, чем у первого модального окна */
+}
+
+.thank-you-modal-content {
+  background-color: #292626;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 500px;
+  position: relative;
+}
+
+.thank-you-modal p {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+  

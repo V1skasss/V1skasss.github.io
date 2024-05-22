@@ -1,0 +1,38 @@
+.NotFoundContainer {
+    height: 524px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #390d0d, #1a1818);
+    padding-top: 10px;
+}
+
+.NotFoundContainer h1 {
+    font-size: 39px; 
+    margin-bottom: 7px; 
+    color: white;
+  }
+  
+  .NotFoundContainer h2 {
+    font-size: 27px; 
+    margin-bottom: 20px; 
+    color: white;
+  }
+
+.HomeButton {
+    background-color: #DA2424;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .HomeButton:hover {
+    background-color: #B01C1C;
+    color: white;
+  }

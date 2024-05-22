@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1A1818;
+  align-items: center;
+  color: white;
+  text-align: left;
+  padding: 10px 10px 10px 50px;
+  }
+  
+  .footer a {
+    font-size: 13px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+  color: #a11e1F;
+  }
+  
+  .footer p {
+  font-size: 13px;
+  }
+  
+  .socsety {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  .socsety p {
+    margin-right: 50px;
+    font-size: 14px;
+  }
+    
+
+  .stylee{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .socsety img {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  cursor: pointer;
+  }

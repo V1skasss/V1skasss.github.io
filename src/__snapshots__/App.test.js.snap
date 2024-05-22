@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Снапшот шапку 1`] = `
+<header>
+  <nav
+    className="flex justify-around"
+  >
+    <a
+      className="text-pink hover:text-darkPink"
+      href="#"
+    >
+      Link
+    </a>
+    <a
+      className="text-pink hover:text-darkPink"
+      href="#"
+    >
+      Link
+    </a>
+    <a
+      className="text-pink hover:text-darkPink"
+      href="#"
+    >
+      Link
+    </a>
+    <a
+      className="text-pink hover:text-darkPink"
+      href="#"
+    >
+      Link
+    </a>
+    <a
+      className="text-pink hover:text-darkPink"
+      href="#"
+    >
+      Link
+    </a>
+  </nav>
+</header>
+`;
