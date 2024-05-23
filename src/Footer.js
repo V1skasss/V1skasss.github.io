@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -11,6 +12,9 @@ function Footer() {
         <a href="https://vk.com/threedaysrain" target="_blank" rel="noopener noreferrer">
           <img src='./vk.webp' alt=" " />
         </a>
+        <Link to="erore">
+          <img src='./insta.webp' alt=" " />
+        </Link>
         <p>+7(925)336-11-67</p>
       </div>
     </footer>
